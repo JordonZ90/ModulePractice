@@ -19,4 +19,5 @@ numbers = random.randrange(11, 250, 2)  # an odd int from 11 to 2249
 
 die1 = random.randint(1, 6)  # assume 5 is returned
 die2 = random.randint(1, 6)  # assume 5 is returned
-print(f"Your roll: {die1}, {die2}")  # Your roll: 6, 5
+roll_total = die1 + die2
+print(f"Your roll: {die1}, {die2}.\nThe roll total was '{roll_total}'")  # Your roll: 6, 5
