@@ -12,15 +12,15 @@ def display_menu():
 def convert_temp():
     option = int(input("Enter a menu option "))
     if option == 1:
-        f = int(input("Enter degrees in Fahrenheit "))
-        c = temperature.to_celsius(f)
-        c = round(c, 2)
-        print(f"Degrees Celsius {c}")
+        fahrenheit = int(input("Enter degrees in Fahrenheit "))
+        celsius = temperature.to_celsius(fahrenheit)
+        celsius = round(celsius, 2)
+        print(f"Degrees Celsius {celsius}")
     elif option == 2:
-        c = int(input("Enter degrees in Celsius "))
-        f = temperature.to_fahrenheit(c)
-        f = round(f, 2)
-        print(f"Degrees Fahrenheit {f}")
+        celsius = int(input("Enter degrees in Celsius "))
+        fahrenheit = temperature.to_fahrenheit(celsius)
+        fahrenheit = round(fahrenheit, 2)
+        print(f"Degrees Fahrenheit {fahrenheit}")
     else:
         print("Tou must enter a valid menu number")
 
