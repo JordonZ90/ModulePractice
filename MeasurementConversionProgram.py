@@ -10,7 +10,7 @@ def display_menu():
     print()
 
 
-def convert_temp():
+def convert_measurements():
     option = int(input("Enter a menu option "))
     if option == 1:
         inches = float(input("Enter measurement in inches "))
@@ -40,7 +40,7 @@ def main():
     display_menu()
     again = "y"
     while again.lower() == "y":
-        convert_temp()
+        convert_measurements()
         print()
         again = input("Convert another measurement? (y|n) ")
         print()
