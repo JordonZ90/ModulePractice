@@ -9,6 +9,8 @@ def display_menu():
     print("4. Yards to Feet")
     print("5. Feet to Miles")
     print("6. Miles to Feet")
+    print("7. Miles to Kilometers")
+    print("8. Kilometers to Miles")
     print()
 
 
@@ -44,6 +46,16 @@ def convert_measurements():
         feet = measurements.miles_to_feet(miles)
         feet = round(feet, 2)
         print(f"Measurement in miles {miles} converted to {feet} feet")
+    elif option == 7:
+        miles = float(input("Enter amount of miles "))
+        kilometers = measurements.miles_to_kilometers(miles)
+        kilometers = round(kilometers, 2)
+        print(f"Measurement in miles {miles} converted to {kilometers} kilometers")
+    elif option == 8:
+        kilometers = float(input("Enter amount of kilometers "))
+        miles = measurements.kilometers_to_miles(kilometers)
+        miles = round(miles, 2)
+        print(f"Measurement in kilometers {kilometers} converted to {miles} miles")
     else:
         print("Tou must enter a valid menu number")
 

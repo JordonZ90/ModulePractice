@@ -26,3 +26,15 @@ def feet_to_miles(feet):
 def miles_to_feet(miles):
     feet = miles * 5280
     return feet
+
+
+def miles_to_kilometers(miles):
+    kilometers = miles * 1.609344
+    return kilometers
+
+
+def kilometers_to_miles(kilometers):
+    miles = kilometers / 1.609344
+    return miles
+
+
