@@ -7,6 +7,8 @@ def display_menu():
     print("2. Centimeters to inches")
     print("3. Feet to Yards")
     print("4. Yards to Feet")
+    print("5. Feet to Miles")
+    print("6. Miles to Feet")
     print()
 
 
@@ -32,6 +34,16 @@ def convert_measurements():
         feet = measurements.to_feet(yards)
         feet = round(feet, 2)
         print(f"Measurement in yards {yards} converted to {feet} feet")
+    elif option == 5:
+        feet = float(input("Enter amount of feet "))
+        miles = measurements.feet_to_miles(feet)
+        miles = round(miles, 2)
+        print(f"Measurement in feet {feet} converted to {miles} miles")
+    elif option == 6:
+        miles = float(input("Enter amount of miles "))
+        feet = measurements.miles_to_feet(miles)
+        feet = round(feet, 2)
+        print(f"Measurement in miles {miles} converted to {feet} feet")
     else:
         print("Tou must enter a valid menu number")
 
@@ -43,7 +55,10 @@ def main():
         convert_measurements()
         print()
         again = input("Convert another measurement? (y|n) ")
-        print()
+        if again == "y".lower():
+            display_menu()
+        else:
+            print()
     print("Goodbye!")
 
 
