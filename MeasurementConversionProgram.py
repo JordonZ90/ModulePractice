@@ -16,22 +16,22 @@ def convert_measurements():
     option = int(input("Enter a menu option "))
     if option == 1:
         inches = float(input("Enter measurement in inches "))
-        centimeters = measurements.to_centimeters(inches)
+        centimeters = measurements.inches_to_centimeters(inches)
         centimeters = round(centimeters, 2)
         print(f"Measurement in inches {inches} converted to {centimeters} centimeters")
     elif option == 2:
         centimeters = float(input("Enter measurement in centimeters "))
-        inches = measurements.to_inches(centimeters)
+        inches = measurements.centimeters_to_inches(centimeters)
         inches = round(inches, 2)
         print(f"Measurement in centimeters {centimeters} converted to {inches} inches")
     elif option == 3:
         feet = float(input("Enter amount of feet "))
-        yards = measurements.to_yards(feet)
+        yards = measurements.feet_to_yards(feet)
         yards = round(yards, 2)
         print(f"Measurement in feet {feet} converted to {yards} yards")
     elif option == 4:
         yards = float(input("Enter amount of yards "))
-        feet = measurements.to_feet(yards)
+        feet = measurements.yards_to_feet(yards)
         feet = round(feet, 2)
         print(f"Measurement in yards {yards} converted to {feet} feet")
     elif option == 5:

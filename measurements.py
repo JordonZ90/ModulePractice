@@ -1,19 +1,19 @@
-def to_centimeters(inches):
+def inches_to_centimeters(inches):
     centimeters = inches * 2.54
     return centimeters
 
 
-def to_inches(centimeters):
+def centimeters_to_inches(centimeters):
     inches = centimeters / 2.54
     return inches
 
 
-def to_yards(feet):
+def feet_to_yards(feet):
     yards = feet / 3
     return yards
 
 
-def to_feet(yards):
+def yards_to_feet(yards):
     feet = yards * 3
     return feet
 
